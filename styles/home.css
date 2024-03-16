@@ -33,15 +33,16 @@
 
 
 .home .sub-title-1 {
-    margin-left: 4%;
-    grid-column: 4/6;
-    align-self:flex-start ;
-    justify-self: left; 
+    margin-left: 0.5vw;
+    margin-top: 0.5vh;
+    grid-column: 3/6;
+    align-self: flex-sart ;
+    justify-self: center; 
 }   
 
 .home .sub-title-2 {
     margin-right: 2%;
-    grid-column: 7/10;
+    grid-column: 8/12;
     align-self:flex-end ;
-    justify-self: right; 
+    justify-self: left; 
 }
