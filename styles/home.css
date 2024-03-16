@@ -1,0 +1,47 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-color: #E5E5E5;
+    width: 100vw;
+    height: 100vw;
+}
+
+/* Todas las etiquetas dentro de la clase .home */
+.home * { 
+    grid-row: 3;
+}
+
+.home h1 {
+    grid-column: 3/11;
+
+    align-self: flex-end;
+    justify-self: center; 
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6vw;
+}
+
+.home h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+
+.home .sub-title-1 {
+    margin-left: 4%;
+    grid-column: 4/6;
+    align-self:flex-start ;
+    justify-self: left; 
+}   
+
+.home .sub-title-2 {
+    margin-right: 2%;
+    grid-column: 7/10;
+    align-self:flex-end ;
+    justify-self: right; 
+}

@@ -1,0 +1,40 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vw;
+    width: 9600px; 
+    background-color: #E5E5E5;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-top: 0%;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 300vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+/* canvas {
+    position: absolute;
+    background-color: aqua;
+    bottom: 5px;
+} */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
