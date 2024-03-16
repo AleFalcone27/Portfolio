@@ -10,7 +10,10 @@
 /* Todas las etiquetas dentro de la clase .home */
 .home * { 
     grid-row: 3;
+    color: #06191D;
+
 }
+
 
 .home h1 {
     grid-column: 3/11;
@@ -45,4 +48,24 @@
     grid-column: 8/12;
     align-self:flex-end ;
     justify-self: left; 
+}
+
+.cursor{
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    transition: transform 0.2s ease;
+    border: 5px ,solid, #06191D ;
+    border-radius: 50%;
+    transform-origin: center center;
+    mix-blend-mode:difference;
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+h1 :hover ~ .cursor-dot {
+    transform: scale(5);
+    transform: translate(-50%,-50%);
 }
