@@ -1,10 +1,20 @@
-const cursor = document.querySelector("[data-cursor-dot]");
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline")
 
 window.addEventListener("mousemove", function (e) {
 
     const posX = e.clientX;
     const posY = e.clientY;
 
-    cursor.style.left = `${posX}px`;
-    cursor.style.top = `${posY}px`;
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    cursorOutline.style.left = `${posX-15}px`;
+    cursorOutline.style.top =`${posY-15}px`;
+
+    cursorOutline.animate({
+        left: `${posX-15}px`,
+        top: `${posY-15}px`
+    },{duration : 1000, fill: "both"})
+
 });
