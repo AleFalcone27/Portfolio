@@ -24,9 +24,3 @@
     mix-blend-mode: difference;
 }
 
-
-
-
-.home .title:hover + .cursor-outline .cursor-dot {
-    transform: scale(5) translate(-50%, -50%);
-}

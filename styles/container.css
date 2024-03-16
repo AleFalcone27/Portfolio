@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    color: #0F0F0F;
+    font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -13,23 +15,15 @@ body {
 }
 
 .container {
-    height: 100vw;
-    width: 9600px; 
+    height: 8640px;
+    width: 100vw; 
     background-color: #E5E5E5;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
-    position: absolute;
-    overflow-x: hidden;
-    overflow-y: scroll;
     padding-top: 0%;
 }
 
-.wrapper{
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    width: 300vw;
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
+    grid-template-rows: repeat(8, 100vh); /* Divide el contenedor en cinco filas, cada una con 100vh de altura */
 }
 
 /* canvas {

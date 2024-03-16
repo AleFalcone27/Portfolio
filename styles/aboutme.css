@@ -1,36 +1,61 @@
 .aboutme {
+    grid-row: 4;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background-color: #E5E5E5;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
+
 
 .aboutme h1 {
-    grid-column: 2/7;
-    grid-row: 2;
-    align-self: flex-end;
+    align-self: flex-start;
     justify-self: center; 
 
-    font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-    font-size: 6vw;
+    font-size: 5vw;
+    position: absolute;
+    white-space: nowrap;
 }
 
 
-.aboutme p {
-
-    grid-column: 7/12;
+.aboutme [id="1"] {
+    grid-column: 1/12;
     grid-row: 2;
+}
+
+.aboutme [id="2"]{
+    grid-column: 2/12;
+    grid-row: 7;
     align-self:center;
     justify-self: center; 
 
-    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5vw;
-
-
 }
+
+
+
+.aboutme [id="3"]{
+    grid-column: 2/12;
+    grid-row: 8;
+    align-self:center;
+    justify-self: center; 
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5vw;
+}
+
+
+.aboutme [id="4"] { 
+    grid-column: 1/12;
+    grid-row: 13;
+}
+
+
+

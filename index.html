@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <link rel="stylesheet" href="./styles/container.css" > 
     <link rel="stylesheet" href="./styles/home.css" > 
     <link rel="stylesheet" href="./styles/aboutme.css" > 
@@ -23,32 +27,45 @@
     <div class="cursor-dot"> </div>
 </div>
 
-<div class="container" >
-    <div class="wrapper">
+<main class="container">
+    <div data-scroll-container class="wrapper">
+            <section data-scroll-section class="home" >
+                <h2 data-scroll data-scroll-speed ="8" class="sub-title-1" > HI THERE, I AM </H2>
+                <h1 data-scroll class="title"> ALEJO FALCONE </H1>  
+                <h2 data-scroll data-scroll-speed ="8" class="sub-title-2" > A SOFTWARE DEVELOPER </H2>  
+            </section>   
 
-            <div class="home">
-                <h2 class="sub-title-1" > HI THERE, I AM </H2>
-                <h1 class="title"> ALEJO FALCONE </H1>  
-                <h2 class="sub-title-2" > A SOFTWARE DEVELOPER </H2>  
-            </div>   
-
-
-            <div class="aboutme"> 
-                <h1 class="title" > ABOUT ME </h1>
-                <p class="description"> 
-                    I'M A FAST LEARNER, PROBLEM SOLVER AND CODE LOVER FROM ARGENTINA, CURRENTLY PURSUING AN ASSOCIATES DEGREE IN SYSTEMS AT UTN.
+            <section data-scroll-section class="aboutme" > 
+                <h1 data-scroll data-scroll-id="hey" data-scroll-speed ="1" class="hey" id="1"> ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - 
+                                                                                        ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                                                                                        - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME</h1>
+                <p data-scroll data-scroll-speed ="10" class="description" id="2"> 
+                    I'M A FAST LEARNER, PROBLEM SOLVER AND CODE LOVER FROM ARGENTINA, CURRENTLY PURSUING AN ASSOCIATES DEGREE IN <b> INFORMATION SYSTEMS </b> AT UTN.
                 </p>
 
+                <p data-scroll data-scroll-speed ="10" class="description" id="3"> 
+                    ENTHUSIASTIC, RESPONSIBLE, AND HIGHLY ADAPTABLE INDIVIDUAL, DEEPLY COMMITTED TO CONTINUOUS LEARNING AND SKILL IMPROVEMENT. MY POSITIVE ATTITUDE, 
+                    COUPLED WITH A REMARKABLE ABILITY TO TACKLE AND SOLVE CHALLENGES CREATIVELY, <b> DEFINES ME. </b>
+                </p>
 
-            </div>
+                <h1 data-scroll data-scroll-id="hoy" data-scroll-speed ="2" class="hey" id="4"> ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - 
+                    ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - 
+                    - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME</h1>
 
-
+            </section>
             <canvas id="canvas"> </canvas>
     </div> 
-</div>
+
+</main>
     
     <script src="script.js" defer></script>
     <script src="cursor.js" defer> </script>
+    <script src="loco.js" defer> </script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+    "></script>
+
 </body>
 
 </html>

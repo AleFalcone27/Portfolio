@@ -1,38 +1,45 @@
 .home {
+
+    grid-row: 2;
+
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     background-color: #E5E5E5;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
 }
 
 /* Todas las etiquetas dentro de la clase .home */
 .home * { 
-    grid-row: 3;
     color: #06191D;
 }
 
+.home div {
+    grid-row: 6;
+    grid-column: 1/3;
+}
+
 .home h1 {
+    grid-row: 9;
     grid-column: 3/11;
 
     align-self: flex-end;
     justify-self: center; 
 
-    font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 6vw;
 }
 
 .home h2 {
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 1.5vw;
 }
 
 .home .sub-title-1 {
+    grid-row: 8;
     margin-left: 0.5vw;
     margin-top: 0.5vh;
     grid-column: 3/6;
@@ -41,9 +48,10 @@
 }   
 
 .home .sub-title-2 {
+    grid-row: 10;
     margin-right: 2%;
     grid-column: 8/12;
-    align-self:flex-end ;
+    align-self:flex-start ;
     justify-self: left; 
 }
 
