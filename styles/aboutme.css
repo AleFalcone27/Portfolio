@@ -11,13 +11,9 @@
 
 
 .aboutme h1 {
-    align-self: flex-start;
-    justify-self: center; 
-
     font-weight: 900;
     font-style: normal;
     font-size: 5vw;
-    position: absolute;
     white-space: nowrap;
 }
 
@@ -25,6 +21,8 @@
 .aboutme [id="1"] {
     grid-column: 1/12;
     grid-row: 2;
+    align-self: flex-start;
+    justify-self: right; 
 }
 
 .aboutme [id="2"]{
@@ -55,6 +53,8 @@
 .aboutme [id="4"] { 
     grid-column: 1/12;
     grid-row: 13;
+    align-self: flex-start;
+    justify-self: left; 
 }
 
 

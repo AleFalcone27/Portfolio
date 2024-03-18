@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./styles/home.css" > 
     <link rel="stylesheet" href="./styles/aboutme.css" > 
     <link rel="stylesheet" href="./styles/cursor.css" > 
+    <link rel="stylesheet" href="./styles/myprojects.css" > 
 
 
     <title>Portfolio</title>
@@ -29,16 +30,39 @@
 
 <main class="container">
     <div data-scroll-container class="wrapper">
+
             <section data-scroll-section class="home" >
-                <h2 data-scroll data-scroll-speed ="8" class="sub-title-1" > HI THERE, I AM </H2>
-                <h1 data-scroll class="title"> ALEJO FALCONE </H1>  
-                <h2 data-scroll data-scroll-speed ="8" class="sub-title-2" > A SOFTWARE DEVELOPER </H2>  
+                <h2 data-scroll data-scroll-speed="5" class="sub-title-1" > HI THERE, I AM </H2>
+                <div class="lerp-block">
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.02"> A </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.04"> L </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.08"> E </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.12"> J </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.32"> O </span> 
+                    </span> </span>    
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.64" > F </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.64"> A </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.32"> L </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.16"> C </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.08"> O </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.04"> N </span>
+                    <span data-scroll data-scroll-speed="6" data-scroll-delay="0.02"> E </span>
+                </div>
+                    
+            
+                <h2 data-scroll data-scroll-speed ="5" class="sub-title-2" > A SOFTWARE DEVELOPER </H2>  
             </section>   
 
             <section data-scroll-section class="aboutme" > 
-                <h1 data-scroll data-scroll-id="hey" data-scroll-speed ="1" class="hey" id="1"> ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - 
-                                                                                        ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
-                                                                                        - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME</h1>
+                <h1 data-scroll 
+                data-scroll-direction="horizontal" 
+                data-scroll-speed ="8" 
+                class="hey" id="1"> ABOUT ME - ABOUT ME 
+                - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                </h1>
                 <p data-scroll data-scroll-speed ="10" class="description" id="2"> 
                     I'M A FAST LEARNER, PROBLEM SOLVER AND CODE LOVER FROM ARGENTINA, CURRENTLY PURSUING AN ASSOCIATES DEGREE IN <b> INFORMATION SYSTEMS </b> AT UTN.
                 </p>
@@ -48,11 +72,27 @@
                     COUPLED WITH A REMARKABLE ABILITY TO TACKLE AND SOLVE CHALLENGES CREATIVELY, <b> DEFINES ME. </b>
                 </p>
 
-                <h1 data-scroll data-scroll-id="hoy" data-scroll-speed ="2" class="hey" id="4"> ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - 
-                    ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - 
-                    - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME</h1>
+                <h1 data-scroll 
+                data-scroll-direction="horizontal"
+                data-scroll-speed="10" 
+                class="hey" id="4"> ABOUT ME - ABOUT ME 
+                    - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                    - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                    - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                    - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME - ABOUT ME
+                </h1>
 
             </section>
+
+            <section data-scroll-section class="myprojects" >
+
+                <h1 class="sticky" data-scroll data-scroll-sticky data-scroll-target="#section-1">MY PROJECTS - MY PROJECTS - MY PROJECTS - MY PROJECTS - MY PROJECTS </h1> 
+                
+
+            </section>
+            
+
+
             <canvas id="canvas"> </canvas>
     </div> 
 
