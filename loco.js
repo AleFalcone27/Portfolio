@@ -3,14 +3,10 @@ const scroll = new LocomotiveScroll({
     smooth: true,
     multiplier: 0.3,
     inertia: 0.3,
-    repeat: true,
-    initPosition: { x: 0, y: 100 }
+    easing: (t) => cubic-bezier(0.32, 0, 0.67, 0),
 });
 
-scroll.on('scroll', (args) => {
 
-    
-});
 
 
 // if (typeof args.currentElements['hey'] === 'object') {
