@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    height: 8640px;
+    height: 100vh *8;
     width: 100vw; 
     background-color: #E5E5E5;
     padding-top: 0%;
@@ -23,7 +23,7 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-rows: repeat(8, 100vh); /* Divide el contenedor en cinco filas, cada una con 100vh de altura */
+    grid-template-rows: repeat(10, 100vh); /* Divide el contenedor en cinco filas, cada una con 100vh de altura */
 }
 
 /* canvas {

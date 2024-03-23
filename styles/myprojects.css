@@ -1,14 +1,66 @@
+
+
+
 .myprojects {
-    grid-row: 5;
+    grid-row: 4/5;
+}
+
+.myprojects #sticky {
+
+    grid-row: auto;
 
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+
     background-color: #E5E5E5;
     width: 100vw;
-    height: 100vh;
+    height: 500vh;
+
+}
+
+.myprojects header {
+    font-size: 2em;
+    grid-row: 2;
+    grid-column: 1;
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    white-space: nowrap;
 
 }
 
 
+.myprojects .content {
+    grid-row: 4;
+    grid-column: 6/13;
+    text-align: center;
+    position: relative;
+}
 
+.myprojects .content div {
+
+    opacity: 0.5;
+    width: 40vw;
+    height: 50vh;
+
+    background: #0F0F0F;
+
+}
+
+.myprojects .content .aux{
+
+    background: #c03d3d;
+
+}
+
+.myprojects .in-view {
+
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.myprojects .in-view:hover {
+    transform: scale(1.1); /* Desplazamiento horizontal cuando el cursor está sobre el elemento */
+    opacity: 1;
+}
