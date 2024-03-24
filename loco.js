@@ -4,6 +4,7 @@ const scroll = new LocomotiveScroll({
     multiplier: 0.3,
     inertia: 0.3,
     easing: (t) => cubic-bezier(0.32, 0, 0.67, 0),
+    repeat: true,
 });
 
 

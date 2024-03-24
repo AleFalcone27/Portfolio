@@ -1,9 +1,7 @@
-
-
-
 .myprojects {
     grid-row: 4/5;
 }
+
 
 .myprojects #sticky {
 
@@ -13,9 +11,9 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 
-    background-color: #E5E5E5;
     width: 100vw;
-    height: 500vh;
+    height: 325vh;/*modificar esta medida para centrar el projects */
+    
 
 }
 
@@ -27,8 +25,10 @@
     writing-mode: vertical-rl;
     text-orientation: upright;
     white-space: nowrap;
-
 }
+
+
+
 
 
 .myprojects .content {
@@ -39,28 +39,211 @@
 }
 
 .myprojects .content div {
-
-    opacity: 0.5;
     width: 40vw;
-    height: 50vh;
+    height: 20vh;
+    border: solid #06191D;
+    display: grid;
+}
 
-    background: #0F0F0F;
+
+
+.myprojects .content {
+    a {
+        color: #06191D;
+        ;
+    }
+
+    .p1 {
+        transition: 0.9s ease;
+
+        h3 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #06191D;
+
+        }
+
+        p {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            color: #06191D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            grid-column: 1/4;
+            grid-row: 4;
+            color: #06191D;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .p2 {
+        transition: 0.9s ease;
+
+        h3 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #06191D;
+
+        }
+
+        p {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            color: #06191D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            grid-column: 1/4;
+            grid-row: 4;
+            color: #06191D;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .p3 {
+        transition: 0.9s ease;
+
+        h3 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #06191D;
+
+        }
+
+        p {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            color: #06191D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            grid-column: 1/4;
+            grid-row: 4;
+            color: #06191D;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .p4 {
+        transition: 0.9s ease;
+
+        h3 {
+            grid-column: 1/4;
+            grid-row: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #06191D;
+
+        }
+
+        p {
+            grid-column: 1/4;
+            grid-row: 2/4;
+            color: #06191D;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            grid-column: 1/4;
+            grid-row: 4;
+            color: #06191D;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+
+.myprojects .content .aux {
+    border: none;
+    background: #E5E5E5;
 
 }
 
-.myprojects .content .aux{
-
-    background: #c03d3d;
-
-}
 
 .myprojects .in-view {
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(1.05);
 
-    transition: opacity 0.5s ease-in-out;
 }
 
 
-.myprojects .in-view:hover {
-    transform: scale(1.1); /* Desplazamiento horizontal cuando el cursor está sobre el elemento */
-    opacity: 1;
+.myprojects .content .p1:hover {
+    border: #E5E5E5;
+    background-color: #06191D;
+
+    a,
+    h3,
+    p,
+    span {
+        color: #E5E5E5;
+        font-style: italic;
+    }
+}
+
+
+.myprojects .content .p2:hover {
+    border: #E5E5E5;
+    background-color: #06191D;
+
+    a,
+    h3,
+    p,
+    span {
+        color: #E5E5E5;
+        font-style: italic;
+    }
+}
+
+
+.myprojects .content .p3:hover {
+    border: #E5E5E5;
+    background-color: #06191D;
+
+    a,
+    h3,
+    p,
+    span {
+        color: #E5E5E5;
+        font-style: italic;
+    }
+}
+
+
+.myprojects .content .p4:hover {
+    border: #E5E5E5;
+    background-color: #06191D;
+
+    a,
+    h3,
+    p,
+    span {
+        color: #E5E5E5;
+        font-style: italic;
+    }
 }
