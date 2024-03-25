@@ -1,5 +1,5 @@
 .myprojects {
-    grid-row: 4/5;
+    grid-row: 4;
 }
 
 
@@ -185,12 +185,6 @@
 
 }
 
-
-.myprojects .in-view {
-    transition: transform 0.5s ease-in-out;
-    transform: scaleX(1.05);
-
-}
 
 
 .myprojects .content .p1:hover {

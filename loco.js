@@ -4,48 +4,54 @@ const scroll = new LocomotiveScroll({
     multiplier: 0.3,
     inertia: 0.3,
     easing: (t) => cubic-bezier(0.32, 0, 0.67, 0),
-    repeat: true,
 });
 
 
 
+scroll.on('scroll', (args) => {
+    if (typeof args.currentElements['hey'] === 'object' && args.currentElements['hey'] !== null) {
+        let progress = args.currentElements['hey'].progress;
+        const positionX = (1 - progress) * 100;
+        console.log(positionX);
 
-// if (typeof args.currentElements['hey'] === 'object') {
-//     const progress = args.currentElements['hey'].progress;
+        const element = document.querySelector('.wrapper');
 
-//     const factor = 0.9; 
-//     const positionX = (1 - progress * factor) * 100;
+        if (positionX < 99) {
+            if (element) {
 
-//     const element = document.querySelector('.hey');
-//     element.style.transform = `translateX(-${positionX}%)`;
-// }
+                GetTransitionColor(positionX).then((colorValueR) => {
+                    console.log("R: ", colorValueR);
+                    element.style.backgroundColor = `rgb(${colorValueR}, ${colorValueR}, ${colorValueR})`;
+                }).catch((error) => {
+                    console.error("Error:", error);
+                });
 
-// scroll.on('scroll', (args) => {
-//     if (typeof args.currentElements['hey'] === 'object') {
-//         const element = document.querySelector('.hey');
-//         const rect = element.getBoundingClientRect();
-//         const posY = rect.top;
+                
 
-//         if (posY < 0 ) {
-//             element.style.position = 'sticky';
-//             element.style.top = '0'; // Establece la posición del elemento en la parte superior de la ventana
-//         } else {
-//             element.style.position = 'static';
-//         }
-//     }
-// });
-
-
-// scroll.on('scroll', (args) => {
-//     if (typeof args.currentElements['hey'] === 'object') {
-//         const progress = args.currentElements['hey'].progress;
-
-//         const positionX = (1 - progress) * 100;
+            } else {
+                console.error("El elemento no fue encontrado.");
+            }
+        }
+        else if (positionX > 99) {
+            element.style.backgroundColor = 'rgb(229, 229, 229)';
+        }
+    }
+});
 
 
-//         const element = document.querySelector('.hey');
-//         element.style.transform = `translateX(-${positionX}%)`;
 
-//     }
-
-// });
+async function GetTransitionColor(positionX) {
+    return new Promise((resolve, reject) => {
+        // Calcula un valor de color entre 15 y 299 basado en la posiciónX
+        let r = 15 + ((229 - 15) * (positionX / 100));
+        
+        // Aseguramos que el valor se encuentr eentre 229 y 15
+        if (r < 15) {
+            resolve(15);
+        } else if (r > 229) {
+            resolve(229);
+        } else {
+            resolve(Math.round(r)); // Redondea el valor de color
+        }
+    });
+}

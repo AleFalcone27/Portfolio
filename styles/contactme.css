@@ -1,0 +1,47 @@
+/*Este grid triguerea el cambio del background*/
+.aux-grid {
+    grid-row: 9;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactme {
+    grid-row: 10;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactme {
+
+    h1 {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        grid-row: 3;
+        grid-column: 2/8;
+
+        color: #E5E5E5;
+        font-size: 5em;
+    }
+    h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        grid-row: 7;
+        grid-column: 9/12;
+
+        color: #E5E5E5;
+        font-size: 5em;
+    }
+}
