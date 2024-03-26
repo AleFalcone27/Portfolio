@@ -24,14 +24,15 @@
     h1 {
 
         display: flex;
-        align-items: center;
+        align-items: bottom;
         justify-content: space-between;
 
         grid-row: 3;
-        grid-column: 2/8;
+        grid-column: 4/10;
 
         color: #E5E5E5;
         font-size: 5em;
+
     }
     h2 {
         display: flex;
@@ -39,9 +40,39 @@
         justify-content: space-between;
 
         grid-row: 7;
-        grid-column: 9/12;
+        grid-column: 10/12;
 
         color: #E5E5E5;
         font-size: 5em;
+
     }
 }
+
+.contactme a.linkedin {
+    grid-column: 2;
+    grid-row: 7;
+    
+    align-items: center;
+    display: inline-block; 
+    width: fit-content; 
+
+    margin-left:60%;
+    margin-top: 10%;
+}
+
+.contactme a.github {
+    grid-row: 7;
+    grid-column: 4/5;
+
+    align-items: center;
+    display: inline-block; 
+    width: fit-content; 
+
+    margin-top: 10%;
+}
+
+
+.contactme a  {
+    color: #E5E5E5;
+}
+

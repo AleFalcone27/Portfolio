@@ -47,7 +47,7 @@ async function GetTransitionColor(positionX) {
         } else if (r > 229) {
             resolve(229);
         } else {
-            resolve(Math.round(r)); // Redondea el valor de color
+            resolve(Math.round(r)); 
         }
     });
 }

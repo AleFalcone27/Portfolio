@@ -9,11 +9,6 @@
 }
 
 /* Todas las etiquetas dentro de la clase .home */
-.home * { 
-    color: #06191D;
-}
-
-
 .home .lerp-block {
     display: flex;
     align-items: center;

@@ -41,7 +41,7 @@
 .myprojects .content div {
     width: 40vw;
     height: 20vh;
-    border: solid #06191D;
+    border: solid #000000;
     display: grid;
 }
 
@@ -49,7 +49,7 @@
 
 .myprojects .content {
     a {
-        color: #06191D;
+        color: #000000;
         ;
     }
 
@@ -62,14 +62,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #06191D;
+            color: #000000;
 
         }
 
         p {
             grid-column: 1/4;
             grid-row: 2/4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -78,7 +78,7 @@
         span {
             grid-column: 1/4;
             grid-row: 4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             justify-content: center;
         }
@@ -93,14 +93,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #06191D;
+            color: #000000;
 
         }
 
         p {
             grid-column: 1/4;
             grid-row: 2/4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -109,7 +109,7 @@
         span {
             grid-column: 1/4;
             grid-row: 4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             justify-content: center;
         }
@@ -124,14 +124,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #06191D;
+            color: #000000;
 
         }
 
         p {
             grid-column: 1/4;
             grid-row: 2/4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -140,7 +140,7 @@
         span {
             grid-column: 1/4;
             grid-row: 4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             justify-content: center;
         }
@@ -155,14 +155,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #06191D;
+            color: #000000;
 
         }
 
         p {
             grid-column: 1/4;
             grid-row: 2/4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -171,7 +171,7 @@
         span {
             grid-column: 1/4;
             grid-row: 4;
-            color: #06191D;
+            color: #000000;
             display: flex;
             justify-content: center;
         }
@@ -189,7 +189,7 @@
 
 .myprojects .content .p1:hover {
     border: #E5E5E5;
-    background-color: #06191D;
+    background-color: #000000;
 
     a,
     h3,
@@ -203,7 +203,7 @@
 
 .myprojects .content .p2:hover {
     border: #E5E5E5;
-    background-color: #06191D;
+    background-color: #000000;
 
     a,
     h3,
@@ -217,7 +217,7 @@
 
 .myprojects .content .p3:hover {
     border: #E5E5E5;
-    background-color: #06191D;
+    background-color: #000000;
 
     a,
     h3,
@@ -231,7 +231,7 @@
 
 .myprojects .content .p4:hover {
     border: #E5E5E5;
-    background-color: #06191D;
+    background-color: #000000;
 
     a,
     h3,
@@ -241,3 +241,4 @@
         font-style: italic;
     }
 }
+
