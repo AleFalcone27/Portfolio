@@ -183,6 +183,21 @@
     border: none;
     background: #E5E5E5;
 
+
+.myprojects header{
+
+    grid-row: 1;
+    grid-column: 1/12;
+    white-space: nowrap;
+    align-self:center;
+    justify-self: center; 
+}
+
+.myprojects .section1 .content{
+
+    grid-row: 3;
+    grid-column: 1/12;
+    white-space: nowrap;
 }
 
 
@@ -240,4 +255,4 @@
         color: #E5E5E5;
         font-style: italic;
     }
-}
+}}
