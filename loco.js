@@ -12,7 +12,6 @@ scroll.on('scroll', (args) => {
     if (typeof args.currentElements['hey'] === 'object' && args.currentElements['hey'] !== null) {
         let progress = args.currentElements['hey'].progress;
         const positionX = (1 - progress) * 100;
-        console.log(positionX);
 
         const element = document.querySelector('.wrapper');
 
@@ -20,13 +19,10 @@ scroll.on('scroll', (args) => {
             if (element) {
 
                 GetTransitionColor(positionX).then((colorValueR) => {
-                    console.log("R: ", colorValueR);
                     element.style.backgroundColor = `rgb(${colorValueR}, ${colorValueR}, ${colorValueR})`;
                 }).catch((error) => {
                     console.error("Error:", error);
                 });
-
-                
 
             } else {
                 console.error("El elemento no fue encontrado.");
